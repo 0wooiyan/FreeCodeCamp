@@ -1,0 +1,21 @@
+body{
+    background-color: antiquewhite;
+}
+form{
+    background-color: rgb(73, 73, 138);
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 450px;
+    width: 60vw;
+    padding-bottom: 2em;
+}
+h1,p{
+    color: white;
+    text-align: center;
+}
+h1{
+    font-family: Tahoma;
+}
+label, input{
+    display: block;
+}
