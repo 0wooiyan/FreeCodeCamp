@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f5f6f7;
+}
+.header{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 32px;
+    background:#0a0a23;
+    color: #fff;
+    border-bottom:4px solid #fdb347 ;
+}
+.gallery{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*To vertically center your images*/
+    justify-content: center;
+    padding: 20px 10px;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 16px;
+    border-radius:10px;
+  }
+.gallery img{
+    width:100%;
+    max-width:350px;
+    height:300px;
+    /* use the object-fit property to determine how images should behave*/
+    /*set img as:  object-fit property and set it to cover
+    This will tell the image to fill the img container while maintaining aspect ratio, 
+    resulting in cropping to fit.*/
+    object-fit:cover;
+}
+/*::after pseudo-element creates an element that
+is the last child of the selected element
+You can use it to add an empty element after the last image.
+Add a content property set to an empty string "" 
+and 350px set for the width property.
+same width as the images it will push the last image to the left 
+when the gallery is in a two-column layout. */
+.gallery::after {
+    content: "";
+    width: 350px;
+  }
