@@ -1,0 +1,41 @@
+body{
+    background-color: white;
+    margin: 30px 10px;
+}
+main{
+    background-color: blanchedalmond;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+h1, h2, img, figcaption, footer, .describe{
+    text-align: center;
+}
+h1{
+    padding-top: 50px;
+}
+.fig1{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: white;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+h2{
+    margin: 50px 0;
+    font-size: medium;
+}
+.bold{
+    font-weight: 800;
+}
+fieldset{
+    border: none;
+    font-size: medium;
+}
+.quote{
+    font-style: italic;
+}
